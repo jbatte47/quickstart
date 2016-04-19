@@ -1,0 +1,10 @@
+<h1>{{title}}</h1>
+<p>{{instructions}}</p>
+<multi-select></multi-select>
+<button (click)="onSearch()">Search</button>
+<hr>
+<div *ngFor="#result of results">
+  <span>{{result.id}}</span>
+  <span>{{result.message}}</span>
+  <span>{{result.dateTime | date: "MM/dd/yyyy hh:mm:ss"}}</span>
+</div>
